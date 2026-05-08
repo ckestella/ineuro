@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@200;300;400;600;700&family=Manrope:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styling/style.css">
-
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
   <section class="hero" id="hero">
     <p class="hero-eyebrow">Introducing NVLink — NeuroverseLink™</p>
     <h1 class="hero-title">Your Brain.<br>Made Better.</h1>
-    <p class="hero-sub">iNeuro re-engineered.</p>
+    <p class="hero-sub">Engineered for everyone.</p>
     <p class="hero-desc">
       NVLink isn't just a product. It's an upgrade for the human race. A seamless neural bridge between technology and your brain. Access the Neuroverse via NeuroSync™ technology and experience the future of quantum computing and cognitive intelligence today.
     </p>
@@ -42,9 +42,14 @@
     <!-- ASSET PLACEHOLDER: Hero product render / animated 3D device hero image -->
     <!-- Size: 820x460px -->
     <div class="hero-device">
-      <video autoplay muted loop playsinline>
-        <source src="vid/brain.mp4" type="video/mp4">
-      </video>
+      <model-viewer
+        src="img/nvlink.glb"
+        alt="NVLink device"
+        auto-rotate
+        camera-controls
+        shadow-intensity="1"
+        environment-image="neutral">
+      </model-viewer>
     </div>
   </section>
 
@@ -52,8 +57,7 @@
   <section class="product-intro" id="product">
     <div class="section-inner">
       <div class="reveal">
-        <div class="glass-chip"><span class="dot"></span> Live Neural Sync Active</div>
-        <p class="section-eyebrow">NVLINK</p>
+<p class="section-eyebrow">NVLINK</p>
         <h2 class="section-title">Repairing mobility,<br>Enhancing autonomy,<br>For you.</h2>
         <p class="section-body">
           Engineered for the people.<br>NVLink interfaces calibrate with reading signatures to deliver the experience.<BR>NVLink aims to enhance and restore vision, mobility, speech, autonomy, and control.
@@ -64,22 +68,7 @@
       <!-- Suggested: Front/side/back beauty shot, studio-lit on dark background -->
       <!-- Size: 900x675px or similar 4:3 ratio -->
       <div class="product-stage reveal">
-        <div class="placeholder-icon">⬡</div>
-        <p class="placeholder-label">
-          <!-- ASSET: NVLink product cinematic photo (nvlink-cinematic.png) -->
-          Product Cinematic Shot — 900 × 675 px
-        </p>
-      </div>
-
-      <!-- ASSET PLACEHOLDER: Technical cutaway / exploded diagram of NVLink internals -->
-      <!-- Suggested: Illustrated cross-section showing "NeuroFilament layers", chip, etc. -->
-      <!-- Size: 900x500px, transparent or dark background -->
-      <div class="product-stage reveal" style="aspect-ratio:16/7; margin-top:1.5rem;">
-        <div class="placeholder-icon">🔬</div>
-        <p class="placeholder-label">
-          <!-- ASSET: NVLink cutaway / internal anatomy diagram (nvlink-cutaway.png) -->
-          Technical Cutaway Diagram — 900 × 394 px
-        </p>
+        <img src="img/productimg.png" alt="NVLink device">
       </div>
     </div>
   </section>
@@ -123,9 +112,9 @@
         </p>
       </div>
 
-      <div class="features-grid reveal">
+      <div class="features-grid">
 
-        <div class="feature-card">
+        <div class="feature-card reveal" style="transition-delay:0s;">
           <!-- ASSET: Feature icon for NeuroSync (icon-neurosync.svg, 52x52px) -->
           <div class="feature-icon">⚡</div>
           <div class="feature-title">Neuroverse™ App</div>
@@ -133,7 +122,7 @@
           <div class="feature-satire">Terms & Conditions apply.</div>
         </div>
 
-        <div class="feature-card">
+        <div class="feature-card reveal" style="transition-delay:0.15s;">
           <!-- ASSET: Feature icon for ThoughtFilter (icon-thoughtfilter.svg, 52x52px) -->
           <div class="feature-icon">⚡</div>
           <div class="feature-title">Third Party Services</div>
@@ -168,20 +157,20 @@
 
       
       <!-- Third party services -->
-      <div class="testimonials-grid reveal" style="margin-top:3rem;">
-        <div class="feature-card" style="border-radius:20px;">
+      <div class="testimonials-grid" style="margin-top:3rem;">
+        <div class="feature-card reveal" style="border-radius:20px; transition-delay:0s;">
           <!-- ASSET: Researcher headshot (researcher-1.jpg, 80x80px) -->
           <div class="feature-icon"><img src="img/spotify.png" alt="Spotify" width="80" height="80"></div>
           <div class="feature-title">Spotify™</div>
           <div class="feature-desc">"Connect NVLink via Neuroverse for full Spotify compatability and navigation to enjoy your music seamlessly."</div>
         </div>
-        <div class="feature-card" style="border-radius:20px;">
+        <div class="feature-card reveal" style="border-radius:20px; transition-delay:0.15s;">
           <!-- ASSET: Researcher headshot (researcher-2.jpg, 80x80px) -->
           <div class="feature-icon"><img src="img/wallet.png" alt="Apple Wallet" width="80" height="80"></div>
           <div class="feature-title">Apple Wallet™</div>
           <div class="feature-desc">Connect NVLink via Neuroverse for seamless Apple Wallet management and transactions.</div>
         </div>
-        <div class="feature-card" style="border-radius:20px;">
+        <div class="feature-card reveal" style="border-radius:20px; transition-delay:0.3s;">
           <!-- ASSET: Researcher headshot (researcher-3.jpg, 80x80px) -->
           <div class="feature-icon"><img src="img/uber.png" alt="Uber" width="80" height="80"></div>
           <div class="feature-title">Uber™</div>
@@ -301,8 +290,7 @@
       </div>
 
       <p class="reveal" style="text-align:center; font-size:0.72rem; color:rgba(255,255,255,0.15); margin-top:2rem; font-style:italic;">
-        * +11 IQ pts measured against baseline established after initial NVLink installation. iNeuro not liable for pre-installation comparison.
-        Pricing subject to change based on your Neural Loyalty Score™. Device non-refundable once synced. By pre-ordering you agree to the iNeuro Neural Terms of Existence (4,200 pages, updated monthly).
+        Neuroverse™ App is required to operate your NVLink™ product.
       </p>
     </div>
   </section>
@@ -319,7 +307,7 @@
         The future of human and tech symbiosis<br>is now available.
       </h2>
       <p class="section-body">
-        Join the tech symbiosis revolution.
+        Join now.
       </p>
       <div class="hero-btns" style="opacity:1; animation:none;">
         <button class="btn-primary" style="padding:1rem 2.5rem; font-size:1rem;">Order Now›</button>
@@ -341,8 +329,8 @@
           <div class="footer-brand">i<span>Neuro</span></div>
           <!-- ASSET: Footer logo lockup (logo-footer.svg) -->
           <p class="footer-tagline">
-            Think Deeper.™<br><br>
-            Headquartered in a building with very good Wi-Fi. iNeuro is not responsible for you.
+            Engineered for the people.<br><br>
+            Headquarters at the heart of Redwood City, California. 
           </p>
         </div>
         <div>
