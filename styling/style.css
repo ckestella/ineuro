@@ -356,8 +356,8 @@
     }
 
     .product-stage img {
-      width: 50%;
-      height: 50%;
+      width: 42%;
+      height: 42%;
       object-fit: cover;
       display: block;
       border-radius: 2px;
