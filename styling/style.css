@@ -40,14 +40,15 @@
     }
 
     .nav-logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: #fff;
       text-decoration: none;
+      display: flex;
+      align-items: center;
     }
 
-    .nav-logo span { color: var(--accent-glow); }
+    .nav-logo img {
+      height: 33px;
+      width: auto;
+    }
 
     .nav-links {
       display: flex;
