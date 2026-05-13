@@ -347,8 +347,9 @@
 
     /* Large cinematic product shot */
     .product-stage {
-      width: 100%;
-      max-width: 900px;
+      width: 150%;
+      max-width: 1080px;
+      max-height: 900px;
       margin: 0 auto 4rem;
       border-radius: 28px;
       display: flex;
